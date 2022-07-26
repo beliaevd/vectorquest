@@ -1,0 +1,77 @@
+{{template "base" .}}
+
+{{define "title"}}Регистрация{{end}}
+
+
+
+{{define "scripts"}}
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./static/user/js/pages/sign_up/sign_up.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+{{end}}
+
+{{define "app-wrapper"}}
+
+<section id="content">
+
+<div class="sing_up">
+  <div class="page_des">
+  <p>Всего один шаг на пути к миру интеллектуальных игр!</p>
+  </div>
+<form  id="sign_up" method="post">
+  <div class="container">
+    <div class="row">
+  <div class="col-sm-3">
+<div class="form-group">
+    <label  class="singup-label">Имя</label>
+    <input type="text" class="form-control" name="name" id="name"  placeholder="Имя">
+  </div>
+  <div class="form-group">
+    <label  class="singup-label">Фамилия</label>
+    <input type="text" class="form-control" name="surname" id="surname" placeholder="Фамилия">
+  </div>
+  <div class="form-group">
+    <label  class="singup-label">Отчество</label>
+    <input type="text" class="form-control" name="patronymic" id="patronymic" placeholder="Отчество">
+  </div>
+  <div class="form-group">
+    <label  class="singup-label">Школа</label>
+    <select class="form-select" id="school" name="school"  size="1">
+      <option selected>Выберите школу</option>
+    </select>
+      <a href="#" onclick="SchoolAdd()">добавить школу</a>
+  </div>
+  </div>
+
+  <div class="col-sm-3 pull-right">
+    <div class="form-group col-sm-3 ">
+      <label  class="singup-label">Класс</label>
+      <select class="form-select" name="class" id="class" size="1">
+        {{range .C}}
+        <option value="{{.Number}}"> {{.Number}} </option>
+        {{end}}
+      </select>
+    </div>
+<div class="form-group">
+    <label  class="singup-label">Email</label>
+    <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label  class="singup-label">Пароль</label>
+    <input type="password" class="form-control" id="password" name="password"  placeholder="Пароль">
+  </div>
+  <div class="form-group">
+    <label  class="singup-label">Повторите пароль</label>
+    <input type="password" class="form-control" name="password2" id="password2" placeholder="Повторите пароль">
+  </div>
+         <button class="btn btn-primary" type="submit" id="btn_sign_up"> Зарегистрироваться</button>
+  </div>
+  </div>
+  </div>
+</form>
+</div>
+
+</section>
+
+{{end}}

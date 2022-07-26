@@ -1,0 +1,57 @@
+/*************************
+*******Sign up CSS******
+**************************/
+.sing_up{
+    .col-sm-3{
+      &.pull-right{
+        margin-left: 40%;
+      }
+    }
+    .btn{
+      margin-top: 53px;
+      margin-left: 25px;
+      margin-bottom: 100px;
+      font-size: 35px;
+      &:hover{
+        margin-top: 53px;
+        margin-left: 25px;
+        margin-bottom: 100px;
+        font-size: 35px;
+      }
+    }
+  
+  }
+  
+  .singup-label{
+    padding-left: 1%;
+    margin-top: 15px;
+    font-size: 25px;
+  }
+  
+  /*************************
+  *******Sign in CSS******
+  **************************/
+  .sign_in{
+    .col-sm-3{
+      &.pull-right{
+        margin-left: 45%;
+        background-image: url(/static/user/img/quest/triangle_sign_in.png);
+        p{
+          color: white;
+          font-size: 23px;
+        }
+      }
+    }
+    .btn{
+      margin-top: 53px;
+      margin-left: 25px;
+      margin-bottom: 100px;
+      font-size: 35px;
+      &:hover{
+        margin-top: 53px;
+        margin-left: 25px;
+        margin-bottom: 100px;
+        font-size: 35px;
+      }
+    }
+  }

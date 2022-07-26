@@ -1,0 +1,30 @@
+# To contribute improvements to CI/CD templates, please follow the Development guide at:
+# https://docs.gitlab.com/ee/development/cicd/templates.html
+# This specific template is located at:
+# https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Bash.gitlab-ci.yml
+
+# See https://docs.gitlab.com/ee/ci/yaml/index.html for all available options
+
+
+after_script:
+  - cd /home/dbelyaev/go/src/Vectorquest
+  - git stash pop
+
+
+build:
+  stage: build
+  script:
+    - cd /home/dbelyaev/go/src/Vectorquest
+    - git add .
+    - git stash
+    - git pull --all
+    - go mod tidy
+    - go mod vendor
+    - npm i
+
+deploy:
+  stage: deploy
+  script:
+    - cd /home/dbelyaev/go/src/Vectorquest/web
+    - gulp sass
+    - gulp js

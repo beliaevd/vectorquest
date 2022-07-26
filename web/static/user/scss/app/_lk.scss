@@ -1,0 +1,86 @@
+/*************************
+*******Lk CSS*************
+**************************/
+.app-lk{
+
+/***********************
+*****lk_default*********
+***********************/    
+    .lk_menu_option{
+        border: solid black;
+        background-color:  #7f46d5;
+        max-width: 260px;
+        text-align: center;
+        padding: 1px;
+        margin-top: 12px;
+        .h5{
+          font-family: 'Corinthia', cursive;
+          color: white;
+        }
+      }
+      .lk{
+        display: inline-block;
+        position: absolute;
+        &.bg{
+          background-image:  url(/static/user/img/background/lkbackground.png);
+          -webkit-transform: revert;
+          transform: revert;
+          min-width: 8%;
+          bottom: 0;
+          top: 0;
+          background-size: cover;
+        }
+        &.pull-right{
+          right: 0;
+        }
+        &.pull-left{
+          left: 0;
+        }
+      }
+
+
+.menu{
+    margin-top: 50px;
+  }
+    
+  .left-menu{
+    margin-left: 1%;
+    .lk_menu_text{
+      color: white;
+      text-decoration: none;
+    }
+  }
+  .right-menu{
+    margin-left: 7%;
+  }
+  .photo{
+    img{
+      border: 4px solid #7f46d5;
+    }
+    margin-top: 10%;
+    display: block;
+    max-width: 210px;
+  }
+  
+  /*************************
+  *******Cert CSS*************
+  **************************/
+  
+  
+}
+
+
+
+/*************************
+*******Calendar CSS*************
+**************************/
+.app-calendar{ 
+.lk_menu_text{
+    color: white;
+    text-decoration: none;
+  :hover{
+    color: black;
+    text-decoration: none;
+  }
+}
+}

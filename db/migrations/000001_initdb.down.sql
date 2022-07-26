@@ -1,0 +1,27 @@
+DROP TABLE IF EXISTS admin_users;
+
+DROP TABLE IF EXISTS admin_user_categories;
+
+DROP TABLE IF EXISTS webinar_users;
+
+DROP TABLE IF EXISTS users;
+
+DROP TABLE IF EXISTS ranks;
+
+DROP TABLE IF EXISTS questions;
+
+DROP TABLE IF EXISTS question_values;
+
+DROP TABLE IF EXISTS question_categories;
+
+DROP TABLE IF EXISTS online;
+
+DROP TABLE IF EXISTS tests;
+
+DROP TABLE IF EXISTS videos;
+
+DROP TABLE IF EXISTS webinars;
+
+DROP TABLE IF EXISTS classes;
+
+DROP TABLE IF EXISTS schools;

@@ -1,0 +1,21 @@
+package config
+
+type Db_conf struct {
+	DbUrl  string
+	DbPass string
+	DbUser string
+	DbName string
+	DbHost string
+	DbPort string
+}
+
+func DbConfig() *Db_conf {
+	return &Db_conf{
+		DbUrl:  "mysql",
+		DbName: "dbname",
+		DbUser: "dbuser",
+		DbPass: "dbpassword",
+		DbHost: "localhost",
+		DbPort: "dbport",
+	}
+}

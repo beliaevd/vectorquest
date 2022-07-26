@@ -1,0 +1,62 @@
+{{define "base"}}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <link rel="stylesheet" href="/static/user/css/app.css">
+    <link rel="stylesheet" href="/static/plugins/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{template "title" . }}</title>
+</head>
+<body>
+<header id="header"><!--header-->
+    <div class="header_top"><!--header_top-->
+        <div class="row">
+            <div class="col-sm-5">
+                <div class="logo pull-left">
+                    <a href="/"><img src="/static/user/img/logo/Logo.jpg" alt="logo" /></a>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="reg-menu pull-right">
+                    <ul class="nav navbar-nav">
+                        <!-- temporary lk -->
+                        <li><a href="lk"><i class="fa fa-user"></i>Личный кабинет </a></li>
+                        <span>|</span>
+                        <li><a href="registration"><i class="fa fa-user"></i> Регистрация </a></li>
+                        <span>|</span>
+                        <li><a href="login"><i class="fa fa-star"></i> Вход</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header_middle">
+        <div class="container">
+            <div class="row">
+                <div class="mainmenu">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/"> Главная</a></li>
+                        <li><a href="video"> Видео</a></li>
+                        <li><a href="#"> Online</a></li>
+                        <li><a href="#"> О нас</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+{{template  "app-wrapper" .}}
+<div class="hoz-black"></div>
+<footer id ="footer">
+
+</footer>
+{{template "scripts" .}}
+</body>
+</html>
+{{end}}

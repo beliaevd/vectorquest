@@ -1,0 +1,40 @@
+{{template "base" .}}
+
+{{define "title"}}Видео{{end}}
+
+
+{{define "scripts"}}
+
+<script src="./static/user/js/pages/details/timer.js"></script>
+{{end}}
+{{define "app-wrapper"}}
+
+<section id="content">
+<div class="app-video">
+<div class="items_details">
+<div class="container">
+        <div class="row">
+<div class="item">
+
+<div class="col-sm-5">
+<iframe width="500" height="250" src="https://www.youtube.com/embed/HiH8NHyYyBA" title="YouTube video player" frameborder="0"
+     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+     <div id="timer"></div>
+</div>
+<div class="col-sm-6 pull-right">
+<h2>Название</h2>
+<p>Описание</p>
+<a href="index.php?public=test" class="btn btn-primary">Тест</a>
+</div>
+
+</div>
+
+
+
+</div>
+</div>
+</div>
+</div>
+</section>
+{{end}}

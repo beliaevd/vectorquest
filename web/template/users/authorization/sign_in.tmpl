@@ -1,0 +1,36 @@
+{{template "base" .}}
+{{define "title"}}Вход{{end}}
+{{define "scripts"}}{{end}}
+{{define "app-wrapper"}}
+<section id="content">
+<div class="sign_in">
+  <div class="page_des">
+  <p>Добро пожаловать в мир интеллектуальных игр!</p>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <form action="/auth" method="post">
+<div class="form-group">
+    <label  class="singup-label" >Email</label>
+    <input type="text" class="form-control" name="email" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label  class="singup-label" >Пароль</label>
+    <input type="password" class="form-control"  name="password" placeholder="Пароль">
+  
+      <button class="btn btn-primary">Войти</button>
+</div>
+      </form>
+</div>
+
+<div id = "text_sin" class="col-sm-3 pull-right">
+    <p>Привет искатель приключений</p>
+</div>
+    </div>
+  </div>
+
+</div>
+</section>
+{{end}}

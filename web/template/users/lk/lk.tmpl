@@ -1,0 +1,56 @@
+{{template "base" .}}
+
+{{define "title"}}Lk{{end}}
+
+
+{{define "scripts"}}{{end}}
+
+{{define "app-wrapper"}}
+
+<section id="content">
+<div class="app-lk">
+<div class="lk_con">
+    <div class="lk bg pull-left"></div>
+    <div class="lk bg pull-right"></div>
+        <div class="container">
+        <div class="row">
+         <div class="col-sm-5 left-menu">
+             <div class="menu">
+                 <a class="lk_menu_text" href="#">
+                 <div class="lk_menu_option">
+                <h5>Календарь</h5>
+                </div>
+                 </a>
+                 <a class="lk_menu_text" href="#">
+                <div class="lk_menu_option">
+                <h5>Мои игры</h5>
+                </div>
+                 </a>
+                 <a class="lk_menu_text" href="#">
+                <div class="lk_menu_option">
+                <h5>Изменить данные</h5>
+                </div>
+                 </a>
+            </div>
+        </div>
+            <div class="col-sm-6 right-menu">
+             <figure class='photo'>
+                <img src="./static/user/img/lk/garfild.jpg" alt="ava">
+             </figure>
+                <span class="level">
+                    <h5>Уровень: </h5>
+                </span>
+                <span class="rang">
+                    <h5>Ранг: Мудрец</h5>
+                </span>
+                <span class="stat">
+                    <h5>Статистика:</h5>
+                    <p>100/100/0</p>
+                </span>
+            </div>
+        </div>
+        </div>
+</div>
+</div>
+</section>
+{{end}}
